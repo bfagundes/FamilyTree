@@ -1,0 +1,27 @@
+div.bp-item.bp-description {
+    left: 5px !important;
+    width: 115px !important;
+}
+
+.bp-title {
+    font-family: Lucida Grande !important;
+    font-size: 13px !important;
+}
+
+.bp-description {
+    font-size: 10px !important;
+    font-family: Lucida Grande !important;
+}
+
+div.bp-item.bp-corner-all.bt-item-frame {
+    height: 40px !important;
+}
+
+div.bp-item.bp-corner-all.bp-highlight-frame,
+div.bp-item.bp-corner-all.bp-cursor-frame {
+    height: 45px !important;
+}
+
+div.bp-item.bp-description {
+    height: 15px !important;
+}
