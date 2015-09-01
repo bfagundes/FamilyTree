@@ -39,9 +39,6 @@
     <script type="text/javascript" src="dataset.js"></script>
     <script type="text/javascript">
     var famDiagram = null;
-    var fromItem = 0;
-    var toItem = 0;
-    var treeItems = {};
 
     jQuery(document).ready(function () {
         jQuery.ajaxSetup({
@@ -58,6 +55,8 @@
         });
 
         // Pegando as configurações
+        // famdiagram.templates = [getContactTemplate()];
+        // famdiagram.onItemRender = onTemplateRender;
         famDiagram = jQuery("#centerpanel").famDiagram(getConfig());
     });
 
@@ -177,6 +176,31 @@
             // Enable or disable labels on nodes
             showLabels: primitives.common.Enabled.False
         };
+    }
+
+    function onTemplateRender(event, data) {
+        switch (data.renderingMode) {
+            case primitives.common.RenderingMode.Create:
+                /* Initialize widgets here */
+                break;
+            case primitives.common.RenderingMode.Update:
+                /* Update widgets here */
+                break;
+        }
+
+        var itemConfig = data.context;
+        data.element.find("[name=photo]").attr({ "src": itemConfig.image, "alt": itemConfig.title });
+        data.element.find("[name=titleBackground]").css({ "background": itemConfig.itemTitleColor });
+
+        var fields = ["title", "description", "phone", "email"];
+        for (var index = 0; index < fields.length; index++) {
+            var field = fields[index];
+
+            var element = data.element.find("[name=" + field + "]");
+            if (element.text() != itemConfig[field]) {
+                element.text(itemConfig[field]);
+            }
+        }
     }
 
     // Configurações do FamDiagram

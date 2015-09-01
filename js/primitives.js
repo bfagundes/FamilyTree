@@ -6428,6 +6428,7 @@ primitives.orgdiagram.EventArgs = function() {
     this.name = this.position = this.parentItem = this.context = this.oldContext = null;
     this.cancel = !1
 };
+// Zanphy
 primitives.orgdiagram.TemplateConfig = function() {
     this.name = null;
     this.isActive = !0;
@@ -6441,8 +6442,7 @@ primitives.orgdiagram.TemplateConfig = function() {
     this.highlightTemplate = null;
     this.cursorPadding = new primitives.common.Thickness(3, 3, 3, 3);
     this.cursorBorderWidth = 2;
-    this.buttons = this.cursorTemplate =
-        null
+    this.buttons = this.cursorTemplate = null
 };
 primitives.orgdiagram.BackgroundAnnotationConfig = function(a) {
     var b;
@@ -6551,8 +6551,7 @@ primitives.orgdiagram.ConnectorAnnotationConfig = function(a, b) {
     this.labelSize = new primitives.common.Size(60, 30);
     switch (arguments.length) {
         case 1:
-            for (c in a) a.hasOwnProperty(c) && (this[c] =
-                a[c]);
+            for (c in a) a.hasOwnProperty(c) && (this[c] = a[c]);
             break;
         case 2:
             this.fromItem = a, this.toItem = b
@@ -6584,8 +6583,7 @@ primitives.orgdiagram.ItemConfig = function(a, b, c, d, e) {
     this.label = this.calloutTemplateName = null;
     this.showLabel = 0;
     this.labelSize = null;
-    this.labelOrientation =
-        3;
+    this.labelOrientation = 3;
     this.labelPlacement = 0;
     switch (arguments.length) {
         case 1:
@@ -6616,8 +6614,7 @@ primitives.orgdiagram.ShapeAnnotationConfig = function(a) {
         case 1:
             if (null !== a)
                 if (a instanceof Array) this.items = a;
-                else if ("object" ==
-                typeof a)
+                else if ("object" == typeof a)
                 for (b in a) a.hasOwnProperty(b) && (this[b] = a[b])
     }
 };
