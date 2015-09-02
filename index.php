@@ -7,10 +7,10 @@
     <title>Fagundes Family Tree</title>
 
     <!-- CSS Styles -->
-    <link href="css/jquery-ui-1.10.2.custom.css" rel="stylesheet">
-    <link href="css/primitives.latest.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link href="css/layout-default-latest.css" rel="stylesheet" type="text/css"/>
-    <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui-1.10.2.custom.css">
+    <link type="text/css" rel="stylesheet" href="css/primitives.latest.css" media="screen"/>
+    <link type="text/css" rel="stylesheet" href="css/layout-default-latest.css"/>
+    <link type="text/css" rel="stylesheet" href="css/custom.css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
