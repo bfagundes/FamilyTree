@@ -6428,11 +6428,12 @@ primitives.orgdiagram.EventArgs = function() {
     this.name = this.position = this.parentItem = this.context = this.oldContext = null;
     this.cancel = !1
 };
-// Zanphy
+
 primitives.orgdiagram.TemplateConfig = function() {
     this.name = null;
     this.isActive = !0;
-    this.itemSize = new primitives.common.Size(120, 100);
+    // zanphy: tamanho dos Nos (height, width)
+    this.itemSize = new primitives.common.Size(120, 50);
     this.itemBorderWidth = 1;
     this.itemTemplate = null;
     this.minimizedItemSize = new primitives.common.Size(4, 4);
