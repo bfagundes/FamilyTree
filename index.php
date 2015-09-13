@@ -104,7 +104,7 @@
             graphicsType: primitives.common.GraphicsType.Canvas,
 
             // como a página sera exibida. None = todos maximizados
-            pageFitMode: primitives.common.PageFitMode.None,
+            pageFitMode: primitives.common.PageFitMode.FitToPage,
 
             // orientacao. Top = mais antigos embaixo
             orientationType: primitives.common.OrientationType.Top,
