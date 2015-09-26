@@ -93,11 +93,19 @@
         connectorAnnotation.lineType = primitives.common.LineType.Dashed;
         annotations.push(connectorAnnotation);
 
+        var backgroundAnnotation = new primitives.orgdiagram.BackgroundAnnotationConfig([2,3,4,5,6,7,12,13,14,15,16,17,18,19,20,21,73,78]);
+        backgroundAnnotation.borderColor = "#fff";
+        backgroundAnnotation.fillColor = "#fff";
+        backgroundAnnotation.lineWidth = 2;
+        backgroundAnnotation.selectItems = true;
+        backgroundAnnotation.lineType = primitives.common.LineType.Dotted;
+        annotations.push(backgroundAnnotation);
+
         return {
             // set de itens
             items: window[dataSet],
 
-            // item selecionado
+            // itens selecionado
             cursorItem: 1,
 
             // como a pagina sera desenhada. Canvas = melhores graficos (?)
